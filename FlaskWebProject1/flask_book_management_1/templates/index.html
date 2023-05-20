@@ -1,0 +1,18 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<!--Python側から「flash」で渡されたエラーメッセージなどがもしあれば、画面上に表示させるようにする-->
+<!--classにflashのcategoryを設定することで、内容に応じて赤のエラーや黄色のワーニングなどを切り替えることができるようになる-->
+    {% for category, message in get_flashed_messages(with_categories=true) %}
+<div class="{{ category }}">{{ message }}</div>
+    {% endfor %}
+
+<div class="jumbotron">
+    <h1>書籍管理アプリ</h1>
+    <p class="lead">書籍の登録、閲覧、編集、削除を行うFlaskアプリケーションです</p>
+    <p><a href="{{url_for('book.index_book') }}" class="btn btn-primary btn-large">書籍一覧へ　&raquo;</a></p>
+</div>
+
+
+{% endblock %}

@@ -1,5 +1,6 @@
 # flask_book_management
-Flaskの練習と称してソースコピペで作った書籍管理システムです。
+Flaskのお勉強と称して書籍管理システムをコピペで作りました
+勉強の軌跡としてソースコードを管理しておきます。
 
 参考：
 https://logics-of-blue.com/visual-studio-flask-try-make-app/
